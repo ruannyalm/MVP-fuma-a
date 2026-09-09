@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Livros da Ruanny</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Livros da Ruanny</h1>
+      <p>Livros interessantes para todos os momentos</p>
+    </header>
+
+    <main>
+      <section class="sobre">
+        <h2>Venda de livros</h2>
+        <p>Oi! Eu vendo livros legais para estudar, aprender e se divertir.</p>
+        <button id="botaoMensagem">Quero comprar um livro</button>
+      </section>
+
+      <section class="livros">
+        <h2>Meus livros</h2>
+        <div class="lista-livros">
+          <div class="livro">
+            <img
+              src="https://m.media-amazon.com/images/I/81QluJ4QXyL._SL1500_.jpg"
+              alt="Capa de um livro"
+            />
+            <h3>O Pequeno Principe</h3>
+            <p>Uma historia para pensar e imaginar.</p>
+            <strong>R$ 35,00</strong>
+          </div>
+          <div class="livro">
+            <img
+              src="https://www.bing.com/th?id=OPHS.Y5tblgtDCx%2beIg474C474&o=5&pid=21.1&w=140&h=200&qlt=100&dpr=1&o=2&c=8&pcl=f5f5f5"
+            />
+            <h3>Aprendendo JavaScript</h3>
+            <p>Um livro para quem esta comecando a programar.</p>
+            <strong>R$ 30,00</strong>
+          </div>
+          <div class="livro">
+            <img
+              src="https://th.bing.com/th/id/R.4ebcaf46211a893364c99c262300f022?rik=9ubkAD2VhytTDw&pid=ImgRaw&r=0"
+              alt="Livro aberto sobre uma mesa"
+            />
+            <h3>Harry Potter:E a Pedra Filosofal</h3>
+            <p>Uma historia divertida de ficcao.</p>
+            <strong>R$ 25,00</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="pedido">
+        <h2>Faca seu pedido</h2>
+        <form id="formularioPedido">
+          <label for="nome">Seu nome:</label>
+          <input type="text" id="nome" required />
+
+          <label for="livro">Escolha o livro:</label>
+          <select id="livro">
+            <option value="O Pequeno Principe">O Pequeno Principe</option>
+            <option value="Aprendendo JavaScript">Aprendendo JavaScript</option>
+            <option value="Harry Potter:E a Pedra Filosofal">
+              Harry Potter:E a Pedra Filosofal
+            </option>
+          </select>
+
+          <label for="quantidade">Quantidade:</label>
+          <input type="number" id="quantidade" min="1" value="1" required />
+
+          <button type="submit">Enviar pedido</button>
+        </form>
+        <p id="resultado"></p>
+      </section>
+    </main>
+
+    <footer>
+      <p>Telefone: (11) 99999-9999 | Instagram: @livrosdaruanny</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
